@@ -1,5 +1,5 @@
 $(document).ready(function(){ //Koden körs först när sidan är färdig laddad
-	$("#howTo").toggle();
+	$("#rightDiv").toggle();
 	$('.buttonLeft').click(function(){
 		$('.slide').toggle(1000);	
 	});
@@ -22,22 +22,23 @@ $(document).ready(function(){ //Koden körs först när sidan är färdig laddad
   	});
   	$(document).keydown(function(event){
  		if(event.which == 68){
-			$(".slide").animate({ left: "+=20px"}, "fast");
+			$(".slide").animate({ left: "+=10px"}, "fast");
  		}
  		else if(event.which == 83){
- 			$(".slide").animate({ top: "+=20px"}, "fast");
+ 			$(".slide").animate({ top: "+=10px"}, "fast");
  		}
  		else if(event.which == 65){
- 			$(".slide").animate({ left: "-=20px"}, "fast");
+ 			$(".slide").animate({ left: "-=10px"}, "fast");
  		}
  		else if(event.which == 87){
- 			$(".slide").animate({ top: "-=20px"}, "fast");
+ 			$(".slide").animate({ top: "-=10px"}, "fast");
  		}
   	});
   	$("#bannerButton").click(function(){
-  		$('#howTo').fadeIn(500);
+  		$('#rightDiv').fadeIn(500);
   	});
   	$(document).mouseup(function(){
-  		$("#howTo").fadeOut();
-  	})
+  		$("#rightDiv").fadeOut();
+  	});
+  	
 });

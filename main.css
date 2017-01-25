@@ -2,7 +2,7 @@
 	border-radius: 25px;
 }
 .div1{
-	left: 800px;
+	margin-left: 80%;
 }
 .banner{
 	width: 100%;
@@ -26,9 +26,8 @@
 	border-style: solid;
 	font-size: 16px;
 	width: 150px;
-
 }
-#howTo{
+#rightDiv{
 	margin-left: 70%;
 	border-width: 3px;
 	border-color: black;
@@ -36,8 +35,42 @@
 	margin-top: 10px;
 	border-radius: 10px;
 	margin-right: 20%;
+	float: right;
+	width: 300px;
 }
 .bannerText{
 		font-size: 20px;
 }
+.bottomBanner{
+	width: 99%;
+	height: 100px;
+	background-color: black;
+   	position: absolute;
+   	bottom:0;
+   	padding-bottom: 20px;
+   	margin-bottom: 10px;
+   }
+.bottomText{
+	color: white; 
+	font-size: 20px;
+	margin-right: 50px;
+	margin-top: 70px;
+}
+
+@media all and (max-width: 500px){
+	body{
+		background-color: black;
+	}
+	.bottomBanner{
+		background-color: white;
+	}
+	.bottomText{
+		color: black;
+		font-size: 20px;
+		margin-right: 50px;
+		margin-top: 70px;
+	}
+	
+}
+
 
